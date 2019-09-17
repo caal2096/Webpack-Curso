@@ -105,7 +105,7 @@ eval("var content = __webpack_require__(/*! !../../../node_modules/css-loader/di
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/styles.css */ \"./css-style-loader/src/css/styles.css\");\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_styles_css__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\nconsole.log(\"Hola mundo\");\r\n\n\n//# sourceURL=webpack:///./css-style-loader/src/js/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../css/styles.css */ \"./css-style-loader/src/css/styles.css\");\n/* harmony import */ var _css_styles_css__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_css_styles_css__WEBPACK_IMPORTED_MODULE_0__);\n\r\n\r\ndocument.body.innerHTML = \"<p> Hola mundo </p>\";\r\nk;\r\n\n\n//# sourceURL=webpack:///./css-style-loader/src/js/index.js?");
 
 /***/ }),
 
@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body{\\r\\n\\tbackground: red\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./css-style-loader/src/css/styles.css?./node_modules/css-loader/dist/cjs.js");
+eval("exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/dist/runtime/api.js */ \"./node_modules/css-loader/dist/runtime/api.js\")(false);\n// Module\nexports.push([module.i, \"body{\\r\\n\\tbackground: steelblue;\\r\\n\\tdisplay: flex;\\r\\n\\talign-items: center;\\r\\n\\tjustify-content: center;\\r\\n\\tmin-height: 100vh;\\r\\n\\tmargin: 0;\\r\\n\\tfont-size: 40px;\\r\\n\\tfont-family: Arial;\\r\\n}\", \"\"]);\n\n\n//# sourceURL=webpack:///./css-style-loader/src/css/styles.css?./node_modules/css-loader/dist/cjs.js");
 
 /***/ }),
 
