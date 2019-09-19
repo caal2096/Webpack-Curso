@@ -1,4 +1,9 @@
 import "../css/estilos.css";
+import text from "./text.js";
 
-document.body.innerHTML = "<p> Hola mundo </p>";
-k;
+if (module.hot) {
+	module.hot.accept("./text.js", function() {
+		console.log("recargas");
+		text();
+	});
+}

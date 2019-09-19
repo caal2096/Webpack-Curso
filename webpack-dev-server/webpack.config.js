@@ -5,6 +5,7 @@ const path = require("path");
 // Para importar Plugin
 const MiniCSSExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const Webpack = require("webpack");
 // Para exportar un modulo, se debe hacer de la forma commonJS
 
 module.exports = {
@@ -25,27 +26,32 @@ module.exports = {
 
 		filename: "js/[name].js"
 	},
+
+	devServer: {
+		hot: true,
+		open: true,
+		port: 9000
+	},
 	module: {
 		rules: [
 			{
+				test: /\.js$/i,
+				use: "babel-loader",
+				exclude: /node_modules/
+			},
+
+			{
 				test: /\.css$/i,
-				use: [
-					{
-						loader: MiniCSSExtractPlugin.loader
-					},
-					"css-loader"
-				]
+				use: ["style-loader", "css-loader"]
 			}
 		]
 	},
 
 	plugins: [
-		new HtmlWebpackPlugin({
-			title: "Plugins"
-		}),
+		new Webpack.HotModuleReplacementPlugin(),
 
-		new MiniCSSExtractPlugin({
-			filename: "css/[name].css"
+		new HtmlWebpackPlugin({
+			title: "titulo webpack-dev-server"
 		})
 	]
 };
